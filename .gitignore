@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependencies (if needed for SCSS compilation)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+.sass-cache/
+*.css.map
+
+# Environment
+.env
+.env.local
+
+# OS temp files
+*.tmp
