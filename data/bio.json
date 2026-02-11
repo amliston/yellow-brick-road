@@ -1,0 +1,13 @@
+{"team":[
+    {
+        "id":"holly",
+        "firstname":"Holly",
+        "lastname":"Merrick-Liston",
+        "titles":["LPC-MH"],
+        "insurances":["Avera Health Plans", "BlueCross/BlueShield", "Dakota Care", "Medicaid", "Prime West", "Sanford Health Plans", "Tricare"],
+        "html_text":"holly.html",
+        "image":"holly-bio2.png"
+                        
+
+    }
+]}
