@@ -1163,6 +1163,7 @@ section,
   position: relative;
   margin-bottom: 20px;
   color: var(--accent-color);
+  text-align: center;
 }
 
 .services-2 .content .service-item .service-item-icon img {
