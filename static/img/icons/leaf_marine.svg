@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="25px" viewBox="0 0 36 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>leaf_marine</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M31.8125,3.5 C33.2234223,4.30752307 34.625811,5.13143811 36,6 C33.8849344,8.11506556 31.768134,10.2257643 29.625,12.3125 C27.5996601,14.3860623 25.8158967,16.4432379 24,18.6875 C20.8317404,22.3678015 18.5808119,23.7267376 13.6757812,24.2460938 C7.75265529,24.5382659 4.54371628,23.8262874 0,20 C0.89986232,13.2040249 1.90749185,8.74529169 7,4 C14.0985068,-1.32388008 24.2426545,-0.29030671 31.8125,3.5 Z" id="leaf_marine" fill="#1E469F" fill-rule="nonzero" transform="translate(18, 12.3169) scale(-1, 1) translate(-18, -12.3169)"></path>
+    </g>
+</svg>
