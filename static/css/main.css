@@ -1095,12 +1095,15 @@ section,
   padding: 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   transition: 0.3s;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .services .service-item .icon {
   font-size: 36px;
   line-height: 0;
-  margin-right: 30px;
+  margin-bottom: 20px;
   color: var(--accent-color);
 }
 
