@@ -1112,6 +1112,21 @@ section,
   transform: translateY(-5px);
 }
 
+.services .serviceicon {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .services .serviceicon {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
