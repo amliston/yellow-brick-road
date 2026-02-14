@@ -7,6 +7,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
     .member-img {
       border-radius: 8px;
       overflow: hidden;
@@ -86,6 +87,7 @@
     }
 
     &:hover {
+      transform: scale(1.05);
       .social {
         opacity: 1;
       }

@@ -1224,9 +1224,18 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.team .team-member {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
 .team .team-member .member-img {
   border-radius: 8px;
   overflow: hidden;
+  aspect-ratio: 1;
+  width: 100%;
 }
 
 .team .team-member .social {
@@ -1298,6 +1307,10 @@ section,
   font-size: 14px;
   line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.team .team-member:hover {
+  transform: scale(1.05);
 }
 
 .team .team-member:hover .social {
