@@ -1117,7 +1117,15 @@ section,
   flex-direction: column;
 }
 
-.services .row > div.order-lg-2 {
+.services .row > div {
+  order: auto !important;
+}
+
+.services .row > div:first-child {
+  order: 0;
+}
+
+.services .row > div:not(:first-child) {
   order: 1;
 }
 

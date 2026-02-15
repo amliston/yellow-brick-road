@@ -37,9 +37,15 @@
     flex-direction: column;
     
     > div {
-      &.order-lg-2 {
-        order: 1;
-      }
+      order: auto !important;
+    }
+    
+    > div:first-child {
+      order: 0;
+    }
+    
+    > div:not(:first-child) {
+      order: 1;
     }
     
     .service-title,
