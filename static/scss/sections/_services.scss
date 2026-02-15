@@ -17,12 +17,6 @@
   }
 
   img {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
   }
 
   .serviceicon {
@@ -35,6 +29,42 @@
       width: 50%;
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+
+  // Mobile styling - center text, image on top
+  .row {
+    flex-direction: column;
+    
+    > div {
+      &.order-lg-2 {
+        order: 1;
+      }
+    }
+    
+    .service-title,
+    .service-description {
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+
+      // Odd items (1st, 3rd, 5th) - text left-aligned
+      &:nth-child(odd) {
+        .service-title,
+        .service-description {
+          text-align: left;
+        }
+      }
+
+      // Even items (2nd, 4th, 6th) - text right-aligned
+      &:nth-child(even) {
+        .service-title,
+        .service-description {
+          text-align: right;
+        }
+      }
     }
   }
 }
