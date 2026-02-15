@@ -1136,6 +1136,11 @@ section,
     text-align: left;
   }
 
+  .services .row:nth-child(odd) .serviceicon {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
   .services .row:nth-child(even) .service-title,
   .services .row:nth-child(even) .service-description {
     text-align: right;

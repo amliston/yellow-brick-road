@@ -50,11 +50,16 @@
     @media (min-width: 992px) {
       flex-direction: row;
 
-      // Odd items (1st, 3rd, 5th) - text left-aligned
+      // Odd items (1st, 3rd, 5th) - text left-aligned, image right-aligned in column
       &:nth-child(odd) {
         .service-title,
         .service-description {
           text-align: left;
+        }
+
+        .serviceicon {
+          margin-left: auto;
+          margin-right: 0;
         }
       }
 
