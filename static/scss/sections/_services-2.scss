@@ -2,9 +2,11 @@
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
-.services-2 {
+.services-2.section {
   --background-color: #ecc54b;
+}
 
+.services-2 {
   .section-title {
     h2 {
       color: var(--accent-color);
