@@ -1114,6 +1114,9 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .services-2 .content .service-item .number {
@@ -1132,7 +1135,7 @@ section,
 }
 
 .services-2 .content .service-item .service-item-icon img {
-  width: 50px;
+  width: 80px;
 }
 
 .services-2 .content .service-item .service-item-icon:before {
@@ -1160,6 +1163,11 @@ section,
 
 .services-2 .content .service-item .service-item-content p {
   font-size: 15px;
+  text-align: justify;
+}
+
+.services-2 .content [class^="col-"] {
+  padding: 8px;
 }
 
 @media (min-width: 769px) {
