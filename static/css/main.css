@@ -10,49 +10,38 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #7a6960; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #7cb300; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --accent-lilac: #9386a7;
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #212529;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #7a6960;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #7cb300;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #7cb300; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #7cb300; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/*  ybr colors */
-:root {
-  --bricks: #F3C740;
-  --white: #FFFFFF;
-  --trunk: #562113;
-  --tree: #542011;
-  --gravel: #8A8B8D;
-  --leaf01: #E71D00;
-  --leaf02: #F7722B;
-  --leaf03: #F4C42B;
-  --leaf04: #96C449;
-  --leaf05: #38A312;
-  --leaf06: #0FB186;
-  --leaf07: #119CAE;
-  --leaf08: #1267AC;
-  --leaf09: #1E469F;
-  --leaf10: #532FB8;
-  --leaf11: #9738C8;
-
+  --nav-color: #212529;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #7cb300;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #7cb300;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
 .light-background {
   --background-color: #ffefbc;
   --heading-color: #7c4f08;
@@ -81,7 +70,6 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  font-size: 18px;
 }
 
 a {
@@ -151,7 +139,6 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -170,7 +157,7 @@ h6 {
 }
 
 .pulsating-play-btn:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 120px;
   height: 120px;
@@ -188,7 +175,7 @@ h6 {
 }
 
 .pulsating-play-btn:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -203,7 +190,7 @@ h6 {
 }
 
 .pulsating-play-btn:hover:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -229,7 +216,6 @@ h6 {
     transform: scale(0.6, 0.6);
     opacity: 1;
   }
-
   100% {
     transform: scale(1, 1);
     opacity: 0;
@@ -286,13 +272,11 @@ h6 {
   .header .logo {
     order: 1;
   }
-
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 15px;
   }
-
   .header .navmenu {
     order: 3;
   }
@@ -306,7 +290,6 @@ h6 {
   .navmenu {
     padding: 0;
   }
-
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -314,13 +297,11 @@ h6 {
     list-style: none;
     align-items: center;
   }
-
   .navmenu li {
     position: relative;
   }
-
   .navmenu a,
-  .navmenu a:focus {
+.navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
@@ -332,25 +313,21 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-
   .navmenu a i,
-  .navmenu a:focus i {
+.navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
   }
-
   .navmenu li:last-child a {
     padding-right: 0;
   }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
+  .navmenu li:hover > a,
+.navmenu .active,
+.navmenu .active:focus {
     color: var(--nav-hover-color);
   }
-
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -366,41 +343,34 @@ h6 {
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
-
   .navmenu .dropdown ul li {
     min-width: 200px;
   }
-
   .navmenu .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
-
   .navmenu .dropdown ul a i {
     font-size: 12px;
   }
-
   .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+.navmenu .dropdown ul .active:hover,
+.navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
-
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
   }
-
   .navmenu .dropdown .dropdown ul {
     top: 0;
     left: -90%;
     visibility: hidden;
   }
-
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -418,12 +388,10 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
-
   .navmenu {
     padding: 0;
     z-index: 9997;
   }
-
   .navmenu ul {
     display: none;
     list-style: none;
@@ -439,9 +407,8 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
-
   .navmenu a,
-  .navmenu a:focus {
+.navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
@@ -453,9 +420,8 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-
   .navmenu a i,
-  .navmenu a:focus i {
+.navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
@@ -468,26 +434,22 @@ h6 {
     transition: 0.3s;
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
-
   .navmenu a i:hover,
-  .navmenu a:focus i:hover {
+.navmenu a:focus i:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
   }
-
   .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
+.navmenu .active,
+.navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
-
   .navmenu .active i,
-  .navmenu .active:focus i {
+.navmenu .active:focus i {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
-
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -495,22 +457,18 @@ h6 {
     padding: 10px 0;
     margin: 10px 20px;
     background-color: var(--nav-dropdown-background-color);
-    transition: all 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
-
   .navmenu .dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
   }
-
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
-
   .mobile-nav-active {
     overflow: hidden;
   }
-
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
@@ -520,7 +478,6 @@ h6 {
     margin-right: 0;
     z-index: 9999;
   }
-
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
@@ -528,8 +485,7 @@ h6 {
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
   }
-
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -538,10 +494,10 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: #8a8b8d;
+  --background-color: #dedede;
   --default-color: #000000;
   --heading-color: #274e13;
-  --accent-color: #274e13;
+  --accent-color: #7cb300;
   --contrast-color: #274e13;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -575,7 +531,7 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px 10px;
   width: 100%;
@@ -583,11 +539,11 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -598,7 +554,7 @@ h6 {
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -724,7 +680,6 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -778,9 +733,6 @@ h6 {
 .page-title {
   text-align: center;
   padding: 20px 0;
-  background-image: url("../img/cloudy.png");
-  background-size: cover;
-  background-position: bottom;
 }
 
 .page-title .breadcrumbs {
@@ -818,7 +770,7 @@ h6 {
   margin-right: 0.2rem;
 }
 
-.page-title .breadcrumbs .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+.page-title .breadcrumbs .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
@@ -846,7 +798,6 @@ h6 {
   .page-title .title-wrapper h1 {
     font-size: 2rem;
   }
-
   .page-title .title-wrapper p {
     font-size: 1rem;
   }
@@ -871,9 +822,8 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
-  .section {
+.section {
     scroll-margin-top: 66px;
   }
 }
@@ -896,7 +846,7 @@ section,
 }
 
 .section-title h2:after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 50px;
@@ -927,8 +877,8 @@ section,
 
 .hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 300;
+  font-size: 52px;
+  font-weight: 400;
 }
 
 .hero h1 span {
@@ -938,7 +888,7 @@ section,
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 5px 0 30px 0;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -1014,15 +964,13 @@ section,
     font-size: 28px;
     line-height: 36px;
   }
-
   .hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-
   .hero .btn-get-started,
-  .hero .btn-watch-video {
+.hero .btn-watch-video {
     font-size: 13px;
   }
 }
@@ -1031,7 +979,6 @@ section,
   0% {
     transform: translateY(10px);
   }
-
   100% {
     transform: translateY(-10px);
   }
@@ -1062,10 +1009,6 @@ section,
   color: var(--accent-color);
   margin-right: 20px;
   line-height: 0;
-}
-
-.icon_lilac {
-  color: var(--accent-lilac) !important;
 }
 
 .about .content ul h5 {
@@ -1103,14 +1046,19 @@ section,
   color: var(--default-color);
 }
 
-.services img {
-}
-
 .services .serviceicon {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+@media (min-width: 992px) {
+  .services .serviceicon {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .services .row {
@@ -1138,26 +1086,17 @@ section,
   .services .row {
     flex-direction: row;
   }
-
   .services .row:nth-child(odd) .service-title,
-  .services .row:nth-child(odd) .service-description {
+.services .row:nth-child(odd) .service-description {
     text-align: left;
   }
-
   .services .row:nth-child(odd) .serviceicon {
     margin-left: auto;
     margin-right: 0;
   }
-
   .services .row:nth-child(even) .service-title,
-  .services .row:nth-child(even) .service-description {
+.services .row:nth-child(even) .service-description {
     text-align: right;
-  }
-
-  .services .serviceicon {
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -1175,10 +1114,6 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
-}
-
-.services-2 .service-item {
-  height: 380px;
 }
 
 .services-2 .content .service-item .number {
@@ -1212,7 +1147,7 @@ section,
   display: none;
 }
 
-.services-2 .content .service-item .service-item-icon>span {
+.services-2 .content .service-item .service-item-icon > span {
   color: var(--default-color);
   font-size: 4rem;
 }
@@ -1228,28 +1163,26 @@ section,
 }
 
 @media (min-width: 769px) {
-  .services-2 .content [class^=col-]:nth-child(4n+4) .service-item {
+  .services-2 .content [class^="col-"]:nth-child(4n+4) .service-item {
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
-
-  .services-2 .content [class^=col-]:nth-last-child(-n+4) .service-item {
+  .services-2 .content [class^="col-"]:nth-last-child(-n+4) .service-item {
     border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
 }
 
 @media (max-width: 768px) {
-  .services-2 .content [class^=col-]:nth-child(2n+2) .service-item {
+  .services-2 .content [class^="col-"]:nth-child(2n+2) .service-item {
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
-
-  .services-2 .content [class^=col-]:last-child .service-item,
-  .services-2 .content [class^=col-]:nth-last-child(2) .service-item {
+  .services-2 .content [class^="col-"]:last-child .service-item,
+.services-2 .content [class^="col-"]:nth-last-child(2) .service-item {
     border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
 }
 
 @media (max-width: 576px) {
-  .services-2 .content [class^=col-] .service-item {
+  .services-2 .content [class^="col-"] .service-item {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     margin-bottom: 10px;
   }
@@ -1494,7 +1427,7 @@ section,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1592,12 +1525,10 @@ section,
 .service-details-2 .service-box {
   background-color: var(--surface-color);
   padding: 20px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  width: auto;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details-2 .service-box+.service-box {
+.service-details-2 .service-box + .service-box {
   margin-top: 30px;
 }
 
@@ -1621,30 +1552,6 @@ section,
   padding: 12px 15px;
   margin-top: 15px;
   transition: 0.3s;
-}
-
-p.bio-list {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  display: flex;
-  align-items: center;
-  padding: 12px 15px;
-  margin-top: 15px;
-  transition: 0.3s;
-}
-
-p.bio-list > span {
-  margin-left: 8px;
-  color: var(--tree)
-}  
-
-div.biotext {
-  background-color: color-mix(in srgb, var(--contrast-color), transparent 40%);
-  padding: 20px 32px 32px 32px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-  text-align: justify;
-  line-height: 1.8;
-  max-width: 100%;
 }
 
 .service-details-2 .services-list a:first-child {
@@ -1704,9 +1611,6 @@ div.biotext {
   color: var(--contrast-color);
   margin-top: 30px;
   padding: 30px 15px;
-  max-width: 100%;
-  width: auto;
-  text-align: center;
 }
 
 .service-details-2 .help-box .help-icon {
@@ -1728,8 +1632,7 @@ div.biotext {
 }
 
 .service-details-2 p {
-  font-size: 18px;
-  color: var(--tree)
+  font-size: 15px;
 }
 
 .service-details-2 ul {
