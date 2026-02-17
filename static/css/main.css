@@ -1103,9 +1103,13 @@ section,
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
+.services-2 {
+  --background-color: #ecc54b;
+}
+
 .services-2 .section-title h2 {
   color: var(--accent-color);
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .services-2 .content .service-item {
