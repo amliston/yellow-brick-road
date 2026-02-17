@@ -109,6 +109,9 @@
         .service-item {
           border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
           margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
         }
       }
     }
