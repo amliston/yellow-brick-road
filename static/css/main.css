@@ -733,6 +733,9 @@ h6 {
 .page-title {
   text-align: center;
   padding: 20px 0;
+  background-image: url("../img/cloudy.png");
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .page-title .breadcrumbs {
