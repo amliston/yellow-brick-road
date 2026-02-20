@@ -121,3 +121,13 @@
     }
   }
 }
+
+.bio-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  img {
+    margin-right: 10px;
+  }
+}

@@ -1670,3 +1670,12 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.bio-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bio-list img {
+  margin-right: 10px;
+}
